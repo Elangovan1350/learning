@@ -11,6 +11,9 @@ export default function App() {
     const { value } = e.target;
     setTime(value);
   };
+  const times = new Date()
+  console.log(times)
+
   return (
     <div className="h-screen bg-slate-400 flex justify-center items-center flex-col gap-7">
       <h1
@@ -20,6 +23,7 @@ export default function App() {
         Hello world!
       </h1>
       <h1 className="text-3xl font-bold underline text-center">{time}</h1>
+      <h1 className="text-3xl font-bold underline">{times.getTimezoneOffset()}</h1>
       <form action="" className="flex flex-col gap-9 justify-center items-center">
         <input type="color" name="" id="" onChange={handleColor} />
         <input type="datetime-local" name="" id="" onChange={handleTime} />
