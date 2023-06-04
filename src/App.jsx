@@ -1,5 +1,3 @@
-import { Checkbox } from "@mui/material";
-import { pink } from "@mui/material/colors";
 import { useState } from "react";
 
 export default function App() {
